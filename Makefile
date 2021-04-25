@@ -18,3 +18,10 @@ clean:
 
 install:
 	pip install -e .['dev']
+
+
+test:
+	pytest tests/ -v --cov=delivery
+	coverage html
+	google-chrome htmlcov/index.html
+	
