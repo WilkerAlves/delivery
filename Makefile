@@ -22,4 +22,3 @@ install:
 
 test:
 	pytest tests/ -v --cov=delivery
-	
